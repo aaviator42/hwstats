@@ -9,4 +9,3 @@ Developed and tested on Debian GNU/Linux.
 
 Requires the `vnstat` package for network info. Use `sudo apt install vnstat` to install.
 
-(A demo exists [here](https://ッ.co/hwstats/), but the server it's on is not always connected to the WAN.)
