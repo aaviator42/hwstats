@@ -1,5 +1,7 @@
 <?php
 // hwstats v0.1 by @aaviator42 / 2023-01-28
+// License: AGPLv3
+// https://github.com/aaviator42/hwstats
 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -165,3 +167,4 @@ function getServerLoad()
 
 	return $load;
 }
+
