@@ -1,0 +1,48 @@
+<!--hwstats by @aaviator42 / 2023-01-28 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<title>Hardware stats</title>
+	<style>
+		body {
+			background-color: black;
+			color: cyan;
+			font-family: monospace;
+			font-size: 1.5rem;
+		}
+		
+		h3 {
+			font-size: 2rem;
+		}
+		
+		#info {
+			white-space: pre;
+			border: 0.1rem solid lime;
+			width: 20rem;
+			padding: 0.5rem;
+		}
+	</style>
+
+	<script>
+	function fetchData() {
+	  fetch('hwstats.php')
+	  .then(response => response.text())
+	  .then(data => {
+		document.getElementById('info').innerHTML = data;
+	  });
+	}
+	setInterval(fetchData, 1000);
+	fetchData();
+	</script>
+</head>
+
+<body>
+	<h3>Hardware stats</h3>
+	<div id="info">Loading...
+	</div>
+</body>
+</html>
